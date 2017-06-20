@@ -31,7 +31,7 @@ gulp.task('style',function(){
 gulp.task('script',function(){
 	gulp.src('src/scripts/**/*.js')
 		//.pipe(concat('alinec.js'))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(gulp.dest('dist/scripts'))
 		.pipe(browserSync.reload({stream:true}))
 });

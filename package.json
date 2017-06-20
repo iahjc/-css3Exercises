@@ -17,5 +17,8 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-less": "^3.3.0",
     "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "sea.js": "^2.3.0"
   }
 }

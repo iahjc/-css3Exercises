@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>伪类选择器</title>
+		<link rel="stylesheet" href="styles/app.css"/>
+		<script src="scripts/app.js"></script>
+
+
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>伪类选择器</header>
+			<section>
+				<header>简介</header>
+				<div class="wrap-box">
+					<form action="">
+					<ul class="attrSelector">
+						<li>姓名：<input type="text"/></li>
+						<li>密码：<input type="password"/></li>
+						<li>性别：<input type="radio"/> man <input type="radio"/> woman</li>
+						<li>兴趣：<input type="checkbox"/> 写代码</li>
+						<li>姓名：<input type="text"/></li>
+					</ul>
+					</form>
+				</div>
+			</section>
+
+			<section class="eattr">
+				<header>E:first-child</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr=val] 属性值完全相同时选中</p>
+				</div>
+			</section>
+
+			<section class="eattr">
+				<header>E:last-child</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr=val] 属性值完全相同时选中</p>
+				</div>
+			</section>
+
+			<section class="eattr2">
+				<header>E:nth-child()</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr~=val] 表示一个单独的属性值 这个属性值是以空格分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr2">
+				<header>E:nth-of-type</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr~=val] 表示一个单独的属性值 这个属性值是以空格分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr2">
+				<header>E:nth-last-of-type</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr~=val] 表示一个单独的属性值 这个属性值是以空格分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr2">
+				<header>E:nth-last-child()</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr~=val] 表示一个单独的属性值 这个属性值是以空格分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr2">
+				<header>E:only-child</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr~=val] 表示一个单独的属性值 这个属性值是以空格分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr3">
+				<header>E:first-letter</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr|=val] 表示的是要么是一个单独的属性值，要么这个属性是以"-"分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr4">
+				<header>E:before</header>
+				<div class="wrap-box">
+					
+					<p>注释:E[attr*=val] 表示属性值里包含val字符串并且在任意地方</p>
+				</div>
+			</section>
+
+			<section class="eattr5">
+				<header>E:after</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr^=val] 表示的属性值里包含val字符并且在开始的位置</p>
+				</div>
+			</section>
+
+			<section class="eattr6">
+				<header>E[attr$=attr]</header>
+				<div class="wrap-box">
+					
+					<p>注释：E[attr$=val] 表示的属性值里包含val字符并且在结束的位置</p>
+				</div>
+			</section>
+
+
+		</div>
+	</body>
+</html>

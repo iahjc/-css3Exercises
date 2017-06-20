@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>属性选择器</title>
+		<link rel="stylesheet" href="styles/app.css"/>
+		<script src="scripts/app.js"></script>
+
+		<style>
+			
+
+		</style>
+
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>CSS3-属性选择器</header>
+			<section>
+				<header>简介</header>
+				<div class="wrap-box">
+					<form action="">
+					<ul class="attrSelector">
+						<li>姓名：<input type="text"/></li>
+						<li>密码：<input type="password"/></li>
+						<li>性别：<input type="radio"/> man <input type="radio"/> woman</li>
+						<li>兴趣：<input type="checkbox"/> 写代码</li>
+						<li>姓名：<input type="text"/></li>
+					</ul>
+					</form>
+				</div>
+			</section>
+
+			<section class="eattr">
+				<header>E[attr]</header>
+				<div class="wrap-box">
+					<a href="./a.rmvb" class="download download-movie">a[class="download download-movie"]</a><br />
+					<a href="./b.rmvb" class="download download-os">a[class="download download-os"]</a><br />
+					<a href="./c.mp3" class="download download-music">a[class="download download-music"]</a>
+					<p>注释：E[attr=val] 属性值完全相同时选中</p>
+				</div>
+			</section>
+
+			<section class="eattr2">
+				<header>E[attr~=attr]</header>
+				<div class="wrap-box">
+					<a href="./a.rmvb" class="download download-movie">a[class~="download"]</a><br />
+					<a href="./b.rmvb" class="download download-os">a[class~="download"]</a><br />
+					<a href="./c.mp3" class="download download-music">a[class~="download"]</a>
+					<p>注释：E[attr~=val] 表示一个单独的属性值 这个属性值是以空格分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr3">
+				<header>E[attr|=attr]</header>
+				<div class="wrap-box">
+					<a href="./a.rmvb" class="download download-movie">a[href|="./a.rmvb"]</a><br />
+					<a href="./b.rmvb" class="download download-os">a[href|="./a.rmvb"]</a><br />
+					<a href="./c.mp3" class="download download-music">a[href|="./a.rmvb"]</a>
+					<p>注释：E[attr|=val] 表示的是要么是一个单独的属性值，要么这个属性是以"-"分割的</p>
+				</div>
+			</section>
+
+			<section class="eattr4">
+				<header>E[attr*=attr]</header>
+				<div class="wrap-box">
+					<a href="./a.rmvb" class="download download-movie">a[class*="download"]</a><br />
+					<a href="./b.rmvb" class="download download-os">a[class*="download"]</a><br />
+					<a href="./c.mp3" class="download download-music">a[class*="download"]</a><br />
+					<a href="./d.mp4" class="downloadmp4">a[class*="download"]</a>
+					<p>注释:E[attr*=val] 表示属性值里包含val字符串并且在任意地方</p>
+				</div>
+			</section>
+
+			<section class="eattr5">
+				<header>E[attr^=attr]</header>
+				<div class="wrap-box">
+					<a href="./a.rmvb" class="download download-movie">a[class^="download"]</a><br />
+					<a href="./b.rmvb" class="download download-os">a[class^="download"]</a><br />
+					<a href="./c.mp3" class="download download-music">a[class^="download"]</a><br />
+					<a href="./d.mp4" class="p4downloadm">a[class^="download"]</a>
+					<p>注释：E[attr^=val] 表示的属性值里包含val字符并且在开始的位置</p>
+				</div>
+			</section>
+
+			<section class="eattr6">
+				<header>E[attr$=attr]</header>
+				<div class="wrap-box">
+					<a href="./a.rmvb" class="download download-movie">a[class$="download"]</a><br />
+					<a href="./b.rmvb" class="download download-os">a[class$="download"]</a><br />
+					<a href="./c.mp3" class="download download-music">a[class$="download"]</a><br />
+					<a href="./d.mp4" class="mp4download">a[class$="download"]</a>
+					<p>注释：E[attr$=val] 表示的属性值里包含val字符并且在结束的位置</p>
+				</div>
+			</section>
+
+
+		</div>
+	</body>
+</html>
